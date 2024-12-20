@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memex Christmas Meme Competition - Code a Snowman</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #6A0DAD, #B19CD9);
+      color: white;
+      text-align: center;
+      overflow: auto; /* Enable scrolling */
+    }
+    header {
+      background-color: #6A0DAD;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header img {
+      width: 80px;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+    header img:hover {
+      transform: scale(1.1);
+    }
+    .container {
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 800px;
+      background: white;
+      border-radius: 15px;
+      color: black;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      overflow-y: auto; /* Enable vertical scrolling */
+      height: calc(100vh - 80px); /* Set container height to allow scrolling */
+    }
+    .container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #6A0DAD;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+      font-size: 1.8em;
+      margin: 20px 0;
+      color: #B19CD9;
+    }
+    ul {
+      text-align: left;
+      margin: 20px auto;
+      padding: 0;
+      max-width: 600px;
+      list-style: none;
+    }
+    ul li {
+      margin: 10px 0;
+      background: #F3E5F5;
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: #333;
+    }
+    .link-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background-color: #6A0DAD;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+    .link-button:hover {
+      background-color: #B19CD9;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 16px;
+      padding: 10px;
+      color: #F3E5F5;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .snowflake, .snowman {
+      position: fixed;
+      top: -10px;
+      left: 50%;
+      font-size: 10px;
+      color: white;
+      opacity: 0.9;
+      animation: fall linear infinite;
+      z-index: 1000;
+    }
+    .snowman {
+      font-size: 20px; /* Larger than the snowflake */
+      transform: translateY(-50%); /* Center vertically */
+    }
+    @keyframes fall {
+      0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+      }
+      100% {
+        transform: translateX(calc(100vw * var(--speed-x))) translateY(100vh) rotate(360deg);
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="mulearn.png" alt="μLearn Logo">
+  <img src="ill.png" alt="Illuminate Logo">
+  <img src="merry.png" alt="Merry μ Logo">
+</header>
+
+<div class="container">
+  <h1>Code a Snowman Competition</h1>
+  <p>Hosted by Malabar Zone</p>
+
+  <img src="snowman1.jpeg" alt="Snowman Poster">
+  <img src="snowman2.jpeg" alt="Snowman Poster">
+
+  <h2>🎨 Categories:</h2>
+  <ul>
+    <li>Simple Snowman – Create a basic snowman with code.</li>
+    <li>Interactive Snowman – Add animations and interactions to the snowman.</li>
+  </ul>
+
+  <h2>📝 Submission Guidelines:</h2>
+  <ul>
+    <li>Individual participants.</li>
+    <li>Open to all skill levels and frameworks (e.g., React, Angular, plain CSS).</li>
+    <li>The project must include a snowman and a Christmas tree with animations.</li>
+    <li>All terminology and frameworks used must be mentioned in the README file.</li>
+    <li>Submissions due by January 2, 2024.</li>
+  </ul>
+
+  <h2>📅 Submission Deadline:</h2>
+  <p>🕛 January 2, 2024</p>
+
+  <h2>🏆 Prizes:</h2>
+  <ul>
+    <li>Each participant will receive 100 Karma points.</li>
+    <li>Winning teams will earn 200 Karma points per team member.</li>
+    <li>There is a prize pool worth 4,OOO₹, which will be awarded to the best projects, including recognition on a platform.</li>
+  </ul>
+
+  <h2>🔗 Submission Process:</h2>
+  <ul>
+    <li>Submit your project via an online form/Discord server.</li>
+    <li>Ensure the project is hosted on GitHub or a similar platform.</li>
+  </ul>
+
+  <h2>🖥️ Additional Notes:</h2>
+  <ul>
+    <li>Ensure the project runs smoothly across different browsers.</li>
+    <li>Make sure the snowman and tree animations are visible and functional on various devices.</li>
+  </ul>
+  
+  <a href="https://mulearn.org/r/code-a-snowman" class="link-button">Submit Here</a>
+</div>
+
+<div class="footer">
+  <p>⛄️ Ready to build a snowman with code? Let's get started! ⛄️</p>
+</div>
+
+<script>
+  const createSnowflake = () => {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+    snowflake.textContent = '❄';
+    snowflake.style.left = `${Math.random() * 100}vw`;
+    snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`; // 2-5 seconds
+    snowflake.style.fontSize = `${Math.random() * 10 + 10}px`; // 10-20px
+    snowflake.style.setProperty('--speed-x', `${Math.random() * 0.5 - 0.25}`);
+    document.body.appendChild(snowflake);
+
+    setTimeout(() => {
+      snowflake.remove();
+    }, 5000);
+  };
+
+  const createSnowman = () => {
+    const snowman = document.createElement('div');
+    snowman.classList.add('snowman');
+    snowman.textContent = '⛄️';
+    snowman.style.left = `${Math.random() * 100}vw`;
+    snowman.style.animationDuration = `${Math.random() * 5 + 3}s`; // 3-8 seconds
+    snowman.style.fontSize = `${Math.random() * 20 + 20}px`; // 20-40px
+    snowman.style.setProperty('--speed-x', `${Math.random() * 0.5 - 0.25}`);
+    document.body.appendChild(snowman);
+
+    setTimeout(() => {
+      snowman.remove();
+    }, 7000);
+  };
+
+  setInterval(createSnowflake, 100); // More frequent snowfall
+  setInterval(createSnowman, 2000); // Less frequent snowmen
+</script>
+
+</body>
+</html>
